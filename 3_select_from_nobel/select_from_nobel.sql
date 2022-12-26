@@ -15,3 +15,8 @@ WHERE winner = 'Albert Einstein';
 
 -- Recent Peace Prizes
 -- 4. Give the name of the 'peace' winners since the year 2000, including 2000.
+SELECT winner FROM nobel
+WHERE (subject = 'peace') AND (yr >= 2000);
+
+-- Literature in the 1980's
+-- 5. Show all details (yr, subject, winner) of the literature prize winners for 1980 to 1989 inclusive.
