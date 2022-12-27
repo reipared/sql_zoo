@@ -7,25 +7,25 @@ FROM world;
 -- Show the name for the countries that have a population of at least 200 million. 200 million is 200000000, there are eight zeros.
 SELECT name
 FROM world
-    WHERE population > 200000000;
+  WHERE population > 200000000;
 
 -- 3. Per Capita GDP
 -- Give the name and the per capita GDP for those countries with a population of at least 200 million.
 SELECT name, gdp
 FROM world
-    WHERE population < 200000000;
+  WHERE population < 200000000;
 
 -- 4. South America In millions
 -- Show the "name" and "population" in millions for the countries of the "continent" 'South America'. Divide the population by 1000000 to get population in millions.
 SELECT name, population
 FROM world
-    WHERE population / 1000000;
+  WHERE population / 1000000;
 
 -- 5. France, Germany, Italy
 -- Show the "name" and "population" for France, Germany, Italy.
 SELECT name, population
 FROM world
-    WHERE name IN ('France', 'Germany', 'Italy');
+  WHERE name IN ('France', 'Germany', 'Italy');
 
 -- 6. United
 -- Show the countries which have a "name" that includes the word 'United'
